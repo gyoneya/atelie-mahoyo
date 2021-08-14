@@ -271,6 +271,15 @@ header {
   border-radius: 9px;
 }
 
+/* ----------- FOOTER ----------- */
+
+.copyright {
+  background-color: var(--background-color);
+  text-align: center;
+
+  padding: 20px;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
