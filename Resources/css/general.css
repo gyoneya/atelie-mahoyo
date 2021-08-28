@@ -1,0 +1,25 @@
+.title {
+  font-size: 24px;
+  color: var(--grey-color);
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 1.1;
+}
+
+.container {
+  max-width: 71.25rem;
+  /* padding: 0 2rem; */
+  margin: 0 auto;
+}
+
+.grid-2-cols-rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 86px;
+}

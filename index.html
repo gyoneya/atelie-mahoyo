@@ -8,29 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="Resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="Resources/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
     <title>Ateliê Mahoyo</title>
   </head>
   <body>
     <main>
       <header>
         <a href="#">
-          <img class="logo" alt="Logo do Ateliê Mahoyo"
-          src="Resources/logo_mahoyo_2.jpg"/>
+          <img
+            class="logo"
+            alt="Logo do Ateliê Mahoyo"
+            src="Resources/logo_mahoyo_2.png"
+          />
         </a>
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">Sobre nós</a></li>
+            <li><a class="btn main-nav-link" href="#">Sobre nós</a></li>
           </ul>
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">Fale conosco</a></li>
+            <li><a class="btn main-nav-link" href="#">Fale conosco</a></li>
           </ul>
           <ul class="main-nav-list">
-            <li><a class="main-nav-link nav-cta" href="#">Produtos</a></li>
+            <li><a class="btn btn-main" href="#">Produtos</a></li>
           </ul>
         </nav>
       </header>
@@ -46,11 +50,66 @@
               Personalize cor, tamanho e muito mais!
             </p>
             <ul>
-              <li><a class="btn cta" href="#">Peça já</a></li>
-              <li><a class="btn" href="#">Saiba mais</a></li>
+              <li><a class="btn btn-main" href="#">Peça já</a></li>
+              <li><a class="btn btn-outline" href="#">Saiba mais</a></li>
             </ul>
           </div>
-          <img class="main-section-img" src="Resources/main-page.webp" />
+          <img
+            class="main-section-img"
+            src="Resources/main-page-img.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="categoria-section">
+          <h2 class="container categoria-section-title">
+            Veja nossas categorias
+          </h2>
+          <div class="container categoria-banners">
+            <div class="categoria">
+              <a href="#"
+                ><img
+                  src="Resources/chair-1.jpg"
+                  alt="Brown chair with leather seats"
+              /></a>
+              <a class="categoria-title title" href="#">Cadeiras</a>
+            </div>
+            <div class="categoria">
+              <a href="#"
+                ><img
+                  src="Resources/chair-3.jpg"
+                  alt="White couch with blue cushions"
+              /></a>
+              <a class="categoria-title title" href="#">Sofás</a>
+            </div>
+            <div class="categoria">
+              <a href="#"
+                ><img
+                  src="Resources/chair-2.jpg"
+                  alt="Office chair with leather seats"
+              /></a>
+              <a class="categoria-title title" href="#">Escritório</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-section">
+          <div class="grid-3-cols container testimonials-banner">
+            <img
+              class="testimonials-img"
+              src="Resources/testimonials.jpg"
+              alt="Two woman talking while sitting on a couch"
+            />
+            <div class="testimonials-texts">
+              <h3>"Nosso sofá é o destaque da sala, inesquecível"</h3>
+              <blockquote>
+                Nisi eu enim mollit pariatur. Nisi aliquip quis proident aute
+                aliquip. Commodo sit nisi consectetur tempor eiusmod dolor.
+                Commodo ut laborum dolor labore dolor esse irure.
+              </blockquote>
+              <p>Carla e Elisa Edelweis</p>
+            </div>
+          </div>
         </div>
 
         <div class="diferenciais-section">
@@ -58,9 +117,9 @@
           <div class="container diferenciais-banners">
             <div class="diferenciais-banner">
               <ion-icon name="hammer-outline"></ion-icon>
-              <p class="banner-title title">Móveis artesanais</p>
+              <p class="banner-title title">Peças artesanais</p>
               <p class="banner-description">
-                Nossas peças são feitos à mão com todo o cuidado e carinho por
+                Nossas peças são feitas à mão com todo o cuidado e carinho por
                 nossos artesãos.
               </p>
             </div>
@@ -91,28 +150,57 @@
           </div>
         </div>
 
-        <div class="categoria-section">
-          <h2 class="container categoria-section-title">Veja nossas categorias</h2>
-          <div class="container categoria-banners">
-            <div class="categoria">
-              <a href="#"><img src="Resources/chair-1.jpg" /></a>
-              <a class="categoria-title title" href="#">Infantil</a>
-            </div>
-            <div class="categoria">
-              <a href="#"><img src="Resources/chair-3.jpg" /></a>
-              <a class="categoria-title title" href="#">Móveis</a>
-            </div>
-            <div class="categoria">
-              <a href="#"><img src="Resources/chair-2.jpg" /></a>
-              <a class="categoria-title title" href="#">Acessórios</a>
-            </div>
+        <div class="grid-3-cols container form-section">
+          <div class="form-texts">
+            <h2 class="form-title">Faça seu orçamento!</h2>
+            <p class="form-text">
+              Entraremos em contato para entender suas necessidades e criarmos o
+              móvel perfeito para o seu ambiente
+            </p>
+            <form class="grid-2-cols-rows form-inputs">
+              <div>
+                <label for="nome-completo">Nome completo</label>
+                <input
+                  id="nome-completo"
+                  type="text"
+                  placeholder="Carlos Monteiro"
+                  name="nome-completo"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="eu@exemplo.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="telefone">Telefone</label>
+                <input
+                  id="telefone"
+                  type="tel"
+                  placeholder="(11)12345-6789"
+                  name="tel"
+                  required
+                />
+              </div>
+              <button class="btn btn-form">Solicite orçamento!</button>
+            </form>
+          </div>
+          <div>
+            <img src="Resources/form-edited-compacted.jpg" />
           </div>
         </div>
       </section>
 
-      <footer class="copyright">Copyright &copy; 2021 by Gustavo Yoneya.</footer>
-    </div>
-
+      <footer class="copyright">
+        Copyright &copy; 2021 by Gustavo Yoneya.
+      </footer>
+    </main>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -125,20 +213,8 @@
 </html>
 
 <!-- Site de venda de móveis
-
-Diferenciais:
-- Móveis artesanais
-Nossas peças são feitos à mão com todo o cuidado e carinho por nossos artesãos.
-
-- Tamanhos customizados
-Precisa de um tamanho maior? Sem problemas, entre em contato conosco para customizar
-sua peça e deixá-la perfeita para seu ambiente
-
-- Materiais de qualidade
-Utilizamos os melhores materias para que sua peça dure por muito tempo.
-
-- Manutenção própria
-Quem melhor para cuidar do que quem fez? Com nosso serviço de manutenção um de nossos
-artesãos vai até sua casa cuidar do seu xodó.
+Full Name
+Email address
+Telefone
 
 -->
