@@ -20,43 +20,6 @@
   --background-color: #ebf3fa;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Playfair Display", serif;
-  line-height: 1;
-  color: var(--grey-color);
-  font-weight: 400;
-  font-size: 18px;
-}
-
-main {
-  display: block;
-}
-img {
-  width: 100%;
-}
-
-/* ----------- COMUNS ----------- */
-
-h2 {
-  font-size: 44px;
-  display: flex;
-  justify-content: center;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-img {
-  width: 100%;
-}
-
 /* ----------- BUTTONS ----------- */
 .btn,
 .btn:link,
@@ -64,9 +27,8 @@ img {
   display: inline-block;
 
   text-decoration: none;
-  font-size: 24px;
   font-weight: 700;
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   letter-spacing: 0.5px;
 
   border: none;
@@ -114,9 +76,9 @@ img {
   align-self: end;
   color: var(--white);
   background-color: var(--main-color-darker);
-  font-size: 20px;
+  font-size: 2rem;
 
-  padding: 12px;
+  padding: 1.2rem;
 }
 
 .btn-form:hover {
@@ -127,8 +89,8 @@ img {
 /* ----------- HEADER ----------- */
 
 header {
-  height: 90px;
-  padding: 20px;
+  height: 9rem;
+  padding: 2rem;
   background-color: var(--white);
 
   display: flex;
@@ -137,14 +99,15 @@ header {
 }
 
 .logo {
-  height: 45px;
+  height: 4.5rem;
   width: auto;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 3rem;
+  font-size: 2.4rem;
 }
 
 .main-nav-list {
@@ -153,90 +116,89 @@ header {
 
 /* ----------- MAIN SECTION ----------- */
 .main-section {
-  background-color: var(--background-color);
-  /* padding: 0 40px; */
+  grid-template-columns: 1fr 1fr !important;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 4.8rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+
   gap: 5%;
 }
 
 .main-section-img {
-  height: 700px;
-  width: auto;
+  height: auto;
+  width: 110%;
+}
+
+.main-section-text {
+  align-self: center;
 }
 
 .main-section-text h1 {
-  font-size: 98px;
+  font-size: 9.8rem;
   letter-spacing: -1.3px;
   font-weight: 400;
 
-  margin-bottom: 48px;
+  align-items: center;
+
+  margin-bottom: 4.8rem;
 }
 
 .main-section-text p {
-  font-size: 24px;
   line-height: 1.5;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .main-section-text ul {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
 
   list-style: none;
 }
 
 /* ----------- CATEGORIAS ----------- */
-.categoria-section {
-  margin: 96px;
+.category-section {
+  margin: 9.6rem 0;
 }
 
-.categoria-section-title {
-  margin-bottom: 48px;
+.category-section-title {
+  margin-bottom: 4.8rem;
 }
 
-.categoria-banners {
+.category-banners {
   display: flex;
   justify-content: center;
   gap: 5%;
 }
 
-.categoria {
-  box-shadow: 0 1.25rem 1.875rem rgb(0 0 0 / 8%);
+.category {
   overflow: hidden;
-  transition: all 0.4s;
+  text-decoration: none;
 }
 
-.categoria:hover {
+.category:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.06);
 }
 
-.categoria-title {
+.category-title {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 30px;
-  text-decoration: none;
+  padding: 3rem;
 }
 
-.categoria img {
+.category img {
   width: 350px;
   height: auto;
 }
 
 /* ----------- TESTIMONIALS ----------- */
-.testimonials-section {
-  margin-bottom: 96px;
-}
-
 .testimonials-banner {
   background-color: var(--main-color);
   color: var(--white);
-  padding: 24px;
+  padding: 2.4rem;
 }
 
 .testimonials-texts {
@@ -245,7 +207,7 @@ header {
 }
 
 .testimonials-texts h3 {
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
   letter-spacing: 0.3px;
   font-weight: 600;
 }
@@ -256,38 +218,36 @@ header {
 }
 
 .testimonials-texts blockquote {
-  font-size: 18px;
-  margin-bottom: 24px;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
   font-style: italic;
   line-height: 1.4;
   letter-spacing: 1px;
 }
 
 .testimonials-texts p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* ----------- DIFERENCIAIS ----------- */
 .diferenciais-section {
-  margin-bottom: 88px;
-  padding: 64px 0;
-  background-color: var(--background-color);
+  padding: 9.6rem 0;
 }
 
 .diferenciais-section-title {
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 .diferenciais-banners {
   display: flex;
   justify-content: space-between;
-  gap: 48px;
+  gap: 4.8rem;
   margin: 0 auto;
   font-weight: 400;
 }
 
 .diferenciais-banner ion-icon {
-  font-size: 30px;
+  font-size: 3rem;
   color: var(--main-color);
 
   margin-bottom: 24px;
@@ -298,65 +258,69 @@ header {
 }
 
 .banner-description {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
 /* ----------- FORM ----------- */
 .form-section {
   grid-template-columns: 2fr 1fr;
+  padding: 0;
   gap: 0;
 
   background-color: var(--main-color);
   color: var(--white);
   box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.2);
 
-  margin-bottom: 128px;
+  margin-bottom: 9.6rem;
 }
 
 .form-texts {
-  padding: 64px;
+  padding: 9.6rem;
 }
 
 .form-title {
   justify-content: start;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 .form-text {
-  font-size: 20px;
-  margin-bottom: 48px;
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
   letter-spacing: 0.2px;
 }
 
 .form-inputs {
-  column-gap: 32px;
-  row-gap: 24px;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .form-inputs input {
   width: 100%;
-  font-size: 24px;
-  padding: 9px;
+  padding: 0.9rem;
 }
 
 .form-inputs label {
   display: block;
-  font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.form-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ----------- FOOTER ----------- */
 
 .copyright {
-  background-color: var(--background-color);
   text-align: center;
 
-  padding: 20px;
+  padding: 2rem;
 }
 
 /*

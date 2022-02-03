@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="Resources/css/general.css" />
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/css/queries.css" />
     <title>Ateliê Mahoyo</title>
   </head>
   <body>
@@ -39,62 +40,59 @@
         </nav>
       </header>
       <section>
-        <div class="main-section">
-          <div class="main-section-text">
-            <h1>
-              Móveis pensados <br />
-              para você
-            </h1>
-            <p>
-              Nossos móveis são feitos de acordo com seu estilo.<br />
-              Personalize cor, tamanho e muito mais!
-            </p>
-            <ul>
-              <li><a class="btn btn-main" href="#">Peça já</a></li>
-              <li><a class="btn btn-outline" href="#">Saiba mais</a></li>
-            </ul>
-          </div>
-          <img
-            class="main-section-img"
-            src="Resources/main-page-img.jpg"
-            alt=""
-          />
-        </div>
-
-        <div class="categoria-section">
-          <h2 class="container categoria-section-title">
-            Veja nossas categorias
-          </h2>
-          <div class="container categoria-banners">
-            <div class="categoria">
-              <a href="#"
-                ><img
-                  src="Resources/chair-1.jpg"
-                  alt="Brown chair with leather seats"
-              /></a>
-              <a class="categoria-title title" href="#">Cadeiras</a>
+        <div class="grey-background">
+          <div class="grid-2-cols main-section">
+            <div class="main-section-text">
+              <h1>
+                Móveis pensados <br />
+                para você
+              </h1>
+              <p>
+                Nossos móveis são feitos de acordo com seu estilo.<br />
+                Personalize cor, tamanho e muito mais!
+              </p>
+              <ul>
+                <li><a class="btn btn-main" href="#">Peça já</a></li>
+                <li><a class="btn btn-outline" href="#">Saiba mais</a></li>
+              </ul>
             </div>
-            <div class="categoria">
-              <a href="#"
-                ><img
-                  src="Resources/chair-3.jpg"
-                  alt="White couch with blue cushions"
-              /></a>
-              <a class="categoria-title title" href="#">Sofás</a>
-            </div>
-            <div class="categoria">
-              <a href="#"
-                ><img
-                  src="Resources/chair-2.jpg"
-                  alt="Office chair with leather seats"
-              /></a>
-              <a class="categoria-title title" href="#">Escritório</a>
-            </div>
+            <img
+              class="main-section-img"
+              src="Resources/main-page-img.jpg"
+              alt=""
+            />
           </div>
         </div>
 
-        <div class="testimonials-section">
-          <div class="grid-3-cols container testimonials-banner">
+        <div class="category-section">
+          <h2 class="container category-section-title">Nossas categorias</h2>
+          <div class="container category-banners">
+            <a class="shadow category" href="#">
+              <img
+                src="Resources/chair-1.jpg"
+                alt="Brown chair with leather seats"
+              />
+              <p class="category-title title">Cadeiras</p>
+            </a>
+            <a class="shadow category" href="#">
+              <img
+                src="Resources/chair-3.jpg"
+                alt="White couch with blue cushions"
+              />
+              <p class="category-title title">Sofás</p>
+            </a>
+            <a class="shadow category" href="#">
+              <img
+                src="Resources/chair-2.jpg"
+                alt="Office chair with leather seats"
+              />
+              <p class="category-title title">Escritório</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="grey-background-centralized">
+          <div class="grid-3-cols container shadow testimonials-banner">
             <img
               class="testimonials-img"
               src="Resources/testimonials.jpg"
@@ -113,7 +111,9 @@
         </div>
 
         <div class="diferenciais-section">
-          <h2 class="container diferenciais-section-title">Diferencias</h2>
+          <h2 class="container diferenciais-section-title">
+            Nossos diferencias
+          </h2>
           <div class="container diferenciais-banners">
             <div class="diferenciais-banner">
               <ion-icon name="hammer-outline"></ion-icon>
@@ -150,49 +150,51 @@
           </div>
         </div>
 
-        <div class="grid-3-cols container form-section">
-          <div class="form-texts">
-            <h2 class="form-title">Faça seu orçamento!</h2>
-            <p class="form-text">
-              Entraremos em contato para entender suas necessidades e criarmos o
-              móvel perfeito para o seu ambiente
-            </p>
-            <form class="grid-2-cols-rows form-inputs">
-              <div>
-                <label for="nome-completo">Nome completo</label>
-                <input
-                  id="nome-completo"
-                  type="text"
-                  placeholder="Carlos Monteiro"
-                  name="nome-completo"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="eu@exemplo.com"
-                  name="email"
-                  required
-                />
-              </div>
-              <div>
-                <label for="telefone">Telefone</label>
-                <input
-                  id="telefone"
-                  type="tel"
-                  placeholder="(11)12345-6789"
-                  name="tel"
-                  required
-                />
-              </div>
-              <button class="btn btn-form">Solicite orçamento!</button>
-            </form>
-          </div>
-          <div>
-            <img src="Resources/form-edited-compacted.jpg" />
+        <div class="grey-background-centralized">
+          <div class="grid-3-cols container form-section">
+            <div class="form-texts">
+              <h2 class="form-title">Solicite um orçamento!</h2>
+              <p class="form-text">
+                Entraremos em contato para entender suas necessidades e criarmos
+                o móvel perfeito para o seu ambiente
+              </p>
+              <form class="grid-2-cols form-inputs">
+                <div>
+                  <label for="nome-completo">Nome completo</label>
+                  <input
+                    id="nome-completo"
+                    type="text"
+                    placeholder="Carlos Monteiro"
+                    name="nome-completo"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="eu@exemplo.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="telefone">Telefone</label>
+                  <input
+                    id="telefone"
+                    type="tel"
+                    placeholder="(11)12345-6789"
+                    name="tel"
+                    required
+                  />
+                </div>
+                <button class="btn btn-form">Solicite orçamento!</button>
+              </form>
+            </div>
+            <div>
+              <img class="form-img" src="Resources/form-edited-compacted.jpg" />
+            </div>
           </div>
         </div>
       </section>

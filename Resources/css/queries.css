@@ -1,22 +1,89 @@
 /* -------------------------------------------------------------- */
-/* Big tablets / computers: de 1024 a 1200px */
+/* Big tablets / computers: de 1200 a 1444px */
 /* -------------------------------------------------------------- */
 @media only screen and (max-width: 1444px) {
-  section {
-    max-width: 120rem;
-  }
 }
 
 /* -------------------------------------------------------------- */
 /* Big tablets / computers: de 1024 a 1200px */
 /* -------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
+  .main-section-text h1 {
+    font-size: 7.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .main-section-text p {
+    margin-bottom: 2.4rem;
+  }
+
+  .diferenciais-banners {
+    gap: 4rem;
+  }
 }
 
 /* -------------------------------------------------------------- */
 /* Tablets: de 768 a 1023px */
 /* -------------------------------------------------------------- */
 @media only screen and (max-width: 1023px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .main-nav {
+    gap: 1.2rem;
+  }
+
+  .main-section-text h1 {
+    font-size: 5.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .category-section-title {
+    font-size: 3.6rem;
+  }
+
+  .diferenciais-section-title {
+    font-size: 3.6rem;
+  }
+
+  .category img {
+    position: relative;
+    right: 20%;
+  }
+
+  .category:nth-child(2) img {
+    position: relative;
+    right: 30%;
+  }
+
+  .form-section {
+    grid-template-columns: 1fr 0fr;
+  }
+
+  .form-title {
+    margin-bottom: 3.6rem;
+  }
+
+  .form-text {
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 3rem;
+  }
+
+  .form-inputs label {
+    margin-bottom: 0.8rem;
+  }
+
+  .form-img {
+    display: none;
+  }
 }
 
 /* -------------------------------------------------------------- */
@@ -30,3 +97,11 @@
 /* -------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {
 }
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/ ;

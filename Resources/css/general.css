@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+main {
+  display: block;
+}
+
+h2 {
+  font-size: 4.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+img {
+  width: 100%;
+}
+
 .title {
   font-size: 24px;
   color: var(--grey-color);
@@ -7,15 +43,33 @@
 }
 
 .container {
-  max-width: 71.25rem;
-  /* padding: 0 2rem; */
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 0 4.8rem;
 }
 
-.grid-2-cols-rows {
+.grey-background {
+  background-color: var(--background-color);
+}
+
+.grey-background-centralized {
+  background-color: var(--background-color);
+  padding: 9.6rem 0;
+}
+
+.shadow {
+  box-shadow: 0 1.25rem 1.875rem rgb(0 0 0 / 8%);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.shadow:hover {
+  box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.06);
+}
+
+.grid-2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid-3-cols {
