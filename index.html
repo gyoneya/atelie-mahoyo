@@ -15,11 +15,12 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/general.css" />
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="Resources/css/queries.css" />
+
     <title>Ateliê Mahoyo</title>
   </head>
   <body>
     <main>
-      <header>
+      <header class="navbar">
         <a href="#">
           <img
             class="logo"
@@ -27,14 +28,16 @@
             src="Resources/logo_mahoyo_2.png"
           />
         </a>
+        <a class="btn-mobile-nav" href="#">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li><a class="btn main-nav-link" href="#">Sobre nós</a></li>
-          </ul>
-          <ul class="main-nav-list">
             <li><a class="btn main-nav-link" href="#">Fale conosco</a></li>
-          </ul>
-          <ul class="main-nav-list">
             <li><a class="btn btn-main" href="#">Produtos</a></li>
           </ul>
         </nav>
@@ -48,8 +51,8 @@
                 para você
               </h1>
               <p>
-                Nossos móveis são feitos de acordo com seu estilo.<br />
-                Personalize cor, tamanho e muito mais!
+                Móveis feitos de acordo com seu estilo.<br />
+                Personalize cor, tamanho e muito mais.
               </p>
               <ul>
                 <li><a class="btn btn-main" href="#">Peça já</a></li>
@@ -59,7 +62,7 @@
             <img
               class="main-section-img"
               src="Resources/main-page-img.jpg"
-              alt=""
+              alt="Área externa de uma casa com piscina e duas cadeiras"
             />
           </div>
         </div>
@@ -70,21 +73,21 @@
             <a class="shadow category" href="#">
               <img
                 src="Resources/chair-1.jpg"
-                alt="Brown chair with leather seats"
+                alt="Cadeira de escritório marrom de couro"
               />
               <p class="category-title title">Cadeiras</p>
             </a>
             <a class="shadow category" href="#">
               <img
                 src="Resources/chair-3.jpg"
-                alt="White couch with blue cushions"
+                alt="Sofá branco com almofadas azuis"
               />
               <p class="category-title title">Sofás</p>
             </a>
             <a class="shadow category" href="#">
               <img
                 src="Resources/chair-2.jpg"
-                alt="Office chair with leather seats"
+                alt="Cadeira de escritório com assentos de couro"
               />
               <p class="category-title title">Escritório</p>
             </a>
@@ -92,18 +95,17 @@
         </div>
 
         <div class="grey-background-centralized">
-          <div class="grid-3-cols container shadow testimonials-banner">
+          <div class="grid-2-cols container shadow testimonials-banner">
             <img
               class="testimonials-img"
               src="Resources/testimonials.jpg"
-              alt="Two woman talking while sitting on a couch"
+              alt="Duas mulheres conversando sentadas no sofá"
             />
             <div class="testimonials-texts">
               <h3>"Nosso sofá é o destaque da sala, inesquecível"</h3>
               <blockquote>
                 Nisi eu enim mollit pariatur. Nisi aliquip quis proident aute
                 aliquip. Commodo sit nisi consectetur tempor eiusmod dolor.
-                Commodo ut laborum dolor labore dolor esse irure.
               </blockquote>
               <p>Carla e Elisa Edelweis</p>
             </div>
@@ -192,8 +194,8 @@
                 <button class="btn btn-form">Solicite orçamento!</button>
               </form>
             </div>
-            <div>
-              <img class="form-img" src="Resources/form-edited-compacted.jpg" />
+            <div class="form-img">
+              <img src="Resources/form-edited-compacted.jpg" />
             </div>
           </div>
         </div>
